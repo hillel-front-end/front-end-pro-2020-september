@@ -8,7 +8,7 @@
  
 2) Открыть Git Bash (консоль) в новой папке
  
- ![Alt Text](src/images/git.png)
+ ![Alt Text](src/images/img_1.png)
 
 3) выполнить команду 
  
