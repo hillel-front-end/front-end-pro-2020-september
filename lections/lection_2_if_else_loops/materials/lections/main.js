@@ -121,15 +121,15 @@ var bool = true;
 var boolSecond = false;
 
 
-console.log(+true, '+true');
-console.log(+false, '+false');
+// console.log(+true, '+true');
+// console.log(+false, '+false');
 
-console.log(true + 'abc');
-console.log(false + 'abc');
+// console.log(true + 'abc');
+// console.log(false + 'abc');
 
-console.log(true - ''); // 1 - 0
-console.log(false - ''); //0 - 0
-console.log(true + true); // 1  + 1
+// console.log(true - ''); // 1 - 0
+// console.log(false - ''); //0 - 0
+// console.log(true + true); // 1  + 1
 
 
 /* 
@@ -144,30 +144,42 @@ console.log(true + true); // 1  + 1
 
 // bool = Boolean(111);
 // console.log(bool, 'bool');
-bool = Boolean('');
-console.log(bool, 'empty str');
+// bool = Boolean('');
+// console.log(bool, 'empty str');
 
-bool = Boolean(null);
-console.log(bool, 'null');
+// bool = Boolean(null);
+// console.log(bool, 'null');
 
-bool = Boolean(undefined);
-console.log(bool, 'undefined');
+// bool = Boolean(undefined);
+// console.log(bool, 'undefined');
 
-bool = Boolean(NaN);
-console.log(bool, 'NaN');
+// bool = Boolean(NaN);
+// console.log(bool, 'NaN');
 
-bool = Boolean(0);
-console.log(bool, '0');
+// bool = Boolean(0);
+// console.log(bool, '0');
 
-bool = Boolean('a');
-console.log(bool, 'bool');
+// bool = Boolean('a');
+// console.log(bool, 'bool');
 
 
 
 // ------------- Logical operators [>,<, >=, <=, ==, ====, !] -----------------------
  
 
+res = '1' * '1';
 
+a = 10;
+b = 10;
+c = '10'
+
+console.log(a > b, 'a > b');
+console.log(a < b, 'a < b');
+console.log(a >= b, 'a >= b');
+console.log(a <= b, 'a <= b');
+console.log(a == b, 'a == b');
+console.log(a == c, 'a == c'); // 10 == '10' => true
+console.log(a === c, 'a === c');// 10 === '10' => false
 
 
 
@@ -179,6 +191,20 @@ console.log(bool, 'bool');
         тело условия if
     } 
 */
+
+if (false) {
+    console.log('work');
+}
+age = 12;
+
+if (age > 18) {
+    var login = 'Valera';
+    console.log('work');
+}
+
+console.log(login, 'login');
+
+// console.log('work');
 
 
 
@@ -194,6 +220,16 @@ console.log(bool, 'bool');
         при условие (conditional == false) => выполняеится тело else {}
     }
 */
+
+age = 12;
+
+if (age > 18) {
+    var login = 'Valera';
+    console.log('work');
+} else {
+    var login = 'Aaaa';
+    console.log('Do not work');
+}
 
 
 
@@ -213,7 +249,84 @@ console.log(bool, 'bool');
     }
 */
 
+var time = 10;
+var greeting = 'Hello';
+
+
+if (time < 10) {
+    greeting = 'Good morning';
+} else if (time < 20) {
+    greeting = 'Good day';
+} else {
+    greeting = 'Good evening';
+}
+
+console.log(greeting, 'greeting');
+
+
+role = 'admin';
+age = 19;
+
+if (role === 'admin') {
+    if (age > 18) {
+        console.log('read\write\add');
+    }
+} else if (role === 'user') {
+    console.log('read');
+} else if (role == 'moder') {
+    console.log('read\rewrite');
+} else {
+    console.log('.....')
+}
+
+// || - или
+// && - и
+
+// false || false || true => true
+
+/*
+    true || true => true
+    true || false => true
+    false || true => true
+    false || false => false
+
+*/
+// role = 'user';
+// age = 20;
+
+// if (role === 'admin' || age > 18) {
+//     console.log('read\write\add');
+// }
+
+/*
+    true && false => false
+    false && true => false
+    false && false => false
+    true && true => true
+
+*/
+
+role = 'admin';
+age = 18;
+
+if (role === 'admin' && age >= 18) {
+    console.log('read\write\add');
+}
+
  // ============ Loops ===============
+
+/* 
+    do {
+        блок кода
+    } while(условие)
+*/
+//  var counter = 0;
+
+//  do {
+//     var isContinue = confirm('continue ????')
+//     console.log(isContinue, 'isContinue');
+//     counter++;
+//  } while(counter < 3 && isContinue)
 
 
  /* 
@@ -221,13 +334,12 @@ console.log(bool, 'bool');
         блок кода
     }
 */
+var counter = 1;//1
 
-
-/* 
-    do {
-        блок кода
-    } while(условие)
-*/
+while(counter < 3) {//2
+    console.log('work'); // 3
+    console.log(counter++); // 4
+}
 
 
 /* 
@@ -240,4 +352,14 @@ console.log(bool, 'bool');
 3 - зона увеличения счетчика 
 4 - зона выполнения тела цикла(если зона 2 == true)
 
+*/
+
+for(var index = 0; index < 3; index++) {
+    console.log(4,'4');
+}
+
+/*
+  1)  1 -> 2 -> 4 
+    
+  2) 3 -> 2 -> 4
 */
