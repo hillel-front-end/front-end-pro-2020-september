@@ -6,6 +6,8 @@
  * https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Operators/typeof
  * http://learn.javascript.ru/external-script
  * https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Statements/if...else
+ * https://learn.javascript.ru/while-for
+ * https://basicweb.ru/javascript/js_number_isnan.php
 
 # Практика
 
@@ -24,3 +26,9 @@
 
 5. (**Доп. задание делать не обязательно) Проверить число на простоту. Число вводить с клавиатуры.(<em>Простым числом называются числа имеющие два делителя: единицу и само число</em>)
 <br />
+6. (Доп) Ввести с клавиатуры 2 числа a и b (где a < b). Запустить цикл перебора от a до b.
+    Вывести в консоль квадраты чётных чисел.
+    <br />
+7. (Доп) http://prntscr.com/ull1y4
+    <br />
+8. (Доп) Вывести n чисел из ряда Фибоначчи, где n - вводится с клавиатуры
