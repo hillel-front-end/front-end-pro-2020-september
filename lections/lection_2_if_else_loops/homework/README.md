@@ -7,6 +7,7 @@
  * http://learn.javascript.ru/external-script
  * https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Statements/if...else
  * https://learn.javascript.ru/while-for
+ * https://basicweb.ru/javascript/js_number_isnan.php
 
 # Практика
 
