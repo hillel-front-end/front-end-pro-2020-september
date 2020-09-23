@@ -206,8 +206,15 @@ console.log(login, 'login');
 
 // console.log('work');
 
+var a = null;
 
+//var a =  true || false || true || false
+//var a = false(0)|| 1(true) || 2(true) || 3(true)
 
+// a = a || 0 || 3;
+
+//a =  true && true && true && false
+//a = 1 && 0 && 3 && true && 12
 
 
 
