@@ -1,4 +1,4 @@
-
+// module candidates
 
 // ------- recursive -----------
 // function getValue() {
@@ -110,7 +110,32 @@ function random(max, min) {
 }
 
 var mass = deepArrayFiller(arr);
-
 console.log(mass, 'mass');
 
-// ------------------ object type ---------------
+function row(n, dir) {
+    window[dir? 'printBefore' : 'printAfter'](n)
+}
+
+function printBefore(n, str) {
+    console.log(n, 'n');
+    n == 1? console.log(n) : window[str](n - 1);
+}
+
+function printAfter(n) {
+    n == 1? console.log(n) : printAfter(n - 1);
+    console.log(n, 'n');
+}
+
+row(5, false);
+
+
+// (function() {
+//     var candidates = [];
+// })();
+
+
+function moduleCandidates() {
+    var candidates = [];
+}
+
+moduleCandidates();
