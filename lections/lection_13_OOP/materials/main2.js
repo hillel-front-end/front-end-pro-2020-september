@@ -64,8 +64,13 @@ function HTMLElement(tagName) {
         this.redirect = function() {
             console.log('redirect');
         }
+        
     } else if (tagName.toLowerCase() === 'img') {
         this.showPicture = function() {
+            console.log('showing picture');
+        }
+
+        this.rote = function() {
             console.log('showing picture');
         }
     } else if (tagName.toLowerCase() === 'strong') {
@@ -87,3 +92,16 @@ var img = new HTMLElement('img');
 
 a.render();
 img.render();
+
+
+
+function toDo() {
+    console.log(this.name)
+}
+
+
+var obj = {
+    name: 'Valera'
+};
+
+toDo.call(obj); // obj.toDo = toDo
