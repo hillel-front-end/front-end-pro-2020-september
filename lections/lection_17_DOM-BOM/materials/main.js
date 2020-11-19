@@ -91,8 +91,21 @@ console.dir(document.documentElement, "html");
 // console.log(node, "node");
 // console.log(nodeList, "nodeList");
 
-const domListCollection = document.getElementsByClassName("target");
+// const domListCollection = document.getElementsByClassName("target");
 const nodeList = document.querySelectorAll(".target");
+const node = document.querySelector(".target");
+const login = document.querySelector("#login");
+const container = document.querySelector(".container");
 
-console.log(domListCollection, "domListCollection");
-console.log(nodeList, "nodeList");
+// node.innerHTML = "loding...";
+
+setTimeout(() => {
+  container.align = "center";
+  node.innerHTML += "<strong>goods</strong>";
+  login.value = "Heloo fron JAVASCRIPT";
+  //   node.innerText = "<strong>goods</strong>";
+}, 2000);
+// console.dir(node.innerHTML, "innerHTML");
+// console.log(nodeList, "nodeList");
+// console.log(domListCollection, "domListCollection");
+// console.log(nodeList, "nodeList");
