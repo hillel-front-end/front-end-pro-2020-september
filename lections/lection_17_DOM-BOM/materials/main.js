@@ -27,8 +27,8 @@
 + Style
 */
 
-console.log(window.innerHeight, "innerHeight");
-console.log(window.innerWidth, "innerWidth");
+// console.log(window.innerHeight, "innerHeight");
+// console.log(window.innerWidth, "innerWidth");
 
 // const page = location.search.slice(1).split("&")[0];
 // const count = location.search.slice(1).split("&")[1];
@@ -43,7 +43,7 @@ for (let param of searchParams) {
   queryParams[param[0]] = param[1];
 }
 
-console.log(queryParams, " queryParams");
+// console.log(queryParams, " queryParams");
 
 // location.search = "foo=12";
 // location.href = "https://schema.org/Person";
@@ -59,8 +59,8 @@ function Text(value) {
 
 const someText = new Text("some text");
 
-console.dir(document.body, "body");
-console.dir(document.documentElement, "html");
+// console.dir(document.body, "body");
+// console.dir(document.documentElement, "html");
 // setTimeout(() => {
 //   document.body.style.backgroundColor = "red";
 // }, 2000);
@@ -99,13 +99,46 @@ const container = document.querySelector(".container");
 
 // node.innerHTML = "loding...";
 
-setTimeout(() => {
-  container.align = "center";
-  node.innerHTML += "<strong>goods</strong>";
-  login.value = "Heloo fron JAVASCRIPT";
-  //   node.innerText = "<strong>goods</strong>";
-}, 2000);
+// setTimeout(() => {
+//   container.align = "center";
+//   node.innerHTML += "<strong>goods</strong>";
+//   login.value = "Heloo fron JAVASCRIPT";
+//   //   node.innerText = "<strong>goods</strong>";
+// }, 2000);
 // console.dir(node.innerHTML, "innerHTML");
 // console.log(nodeList, "nodeList");
 // console.log(domListCollection, "domListCollection");
 // console.log(nodeList, "nodeList");
+
+// ========= styles =========
+const box = document.querySelector(".box");
+// box.href = "gggg";
+// console.log(typeof box.className, "box.className");
+// setTimeout(() => (box.className += " hello"), 2000);
+//classList -> add, remove, replace, toggle, containt("box")
+
+// setTimeout(() => {
+//   box.classList.add("hello");
+// }, 2000);
+
+// setTimeout(() => {
+//   // box.classList.remove("hello");
+//   box.classList.replace("box", "box-new");
+// }, 4000);
+// setInterval(() => {
+//   box.classList.toggle("hello");
+// }, 1000);
+//elemen.style.property
+// let textFontSize = 40;
+
+// setInterval(() => (textFontSize = Math.floor(Math.random() * 60)), 1000);
+//getComputedStyles
+
+setInterval(() => {
+  let textFontSize = Math.floor(Math.random() * 60);
+  // box.style.color = "red";
+  // box.style.fontSize = `${textFontSize}px`;
+  // box.classList.add("foo");
+  // box.style.backgroundColor = "rgb(124, 122, 100, .5)";
+}, 2000);
+
