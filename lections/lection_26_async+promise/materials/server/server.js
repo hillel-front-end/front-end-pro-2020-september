@@ -63,6 +63,7 @@ function getUsers() {
 	return [
 		{name: 'Valera', desc: 'aaaaaa', age: 10}, 
 		{name: 'Sasha', desc: 'bbbbb',  age: 18}, 
+		{name: 'Andrey', desc: 'ccccc',  age: 20},
 		{name: 'Andrey', desc: 'ccccc',  age: 20}
 	]
 }
