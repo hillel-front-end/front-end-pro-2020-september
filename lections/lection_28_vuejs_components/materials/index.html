@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        .parent {
+            border: 1px solid black;
+            padding: 10px;
+            /* ba */
+        }
+
+        .parent__inner {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+
+        .child-first    , .child-second {
+            width: 50%;
+
+            border: 1px solid red;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body >
+
+    <div id="app" >
+        <parent-component></parent-component>
+    </div> 
+
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="comp.js"></script>
+    <!-- <script src="custom-select.js"></script> -->
+</body >
+</html>
