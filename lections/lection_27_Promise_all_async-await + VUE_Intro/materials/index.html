@@ -55,6 +55,8 @@
 
         {{  isMarried? 'yes' : 'no' }}
 
+        
+
         <hr />
 
 
@@ -63,8 +65,9 @@
         <article class="products">
           <!-- Товары: -->
           <section class="products__item" v-for="product in products">
-              {{ product }}
+                {{ makeProductName(product) }}
           </section>
+
 
         </article>
 
@@ -73,8 +76,32 @@
         <h1> bind events </h1>
         <div class="buttons buttons__group">
             <button  v-on:click="addProduct()">add</button>
-            <button v-on:click="removeProduct()">remove</button>
+            <button @click="removeProduct()">remove</button>
         </div>
+
+        <hr />
+
+        <h1>two-way data binding</h1>
+
+        <label for="Login">Login</label>
+        <input type="text" id="Login" v-model="login">
+        <button :disabled="login.length < 2" :id="login">send</button>
+        <br />
+        <div v-if="login.length">Hello my dier {{ login }}</div> 
+        <div v-else>Hello anonym</div>
+
+
+        <hr>
+
+        <h1> v-if, v-show</h1>
+        
+        <div v-if="time <= 10">Good morning</div>
+        <div v-else-if="time > 10 && time < 15">Good day</div>
+        <div v-else>Good evening</div>
+
+        <span v-show="isHidden">Hello v-show</span>
+
+        
     </div>
 
     <!-- {{appVersion}} -->

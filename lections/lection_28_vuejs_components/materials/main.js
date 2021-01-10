@@ -5,6 +5,7 @@ var a = new Vue({ // Вызывается конструктор new Vue()
     list: [1,2,3]
   },
   beforeCreate () {
+    debugger;
     console.log('beforeCreate', this); // Перед созданием объекта Vue вызывается метод beforeCreate().  в this - еще не доступны данные из data
   },
 
@@ -20,8 +21,8 @@ var a = new Vue({ // Вызывается конструктор new Vue()
     Далее выполняется компиляция шаблона el
   */
 
-  beforeMount () { //Вызывается метод beforeMount() Перед тем как Элемент html, к которому прикреплен объект Vue, заменяется скомпилированным шаблоном
-    console.log('beforeMount');
+  beforeMount () {
+    console.log('beforeMount', this); //Вызывается метод beforeMount() Перед тем как Элемент html, к которому прикреплен объект Vue, заменяется скомпилированным шаблоном 
     debugger;
   },
 
